@@ -5,7 +5,7 @@ import Home from "../pages/index";
 describe("<Home/>", () => {
   it("Check for Getting Started Text", () => {
     const { getByText } = render(<Home />);
-    expect(getByText("Get started by editing")).toBeInTheDocument();
+    expect(getByText("Get started by editing")).not.toBeInTheDocument();
   });
   it("Renders appropriately", () => {
     render(<Home />);
